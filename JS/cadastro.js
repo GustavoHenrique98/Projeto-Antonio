@@ -16,19 +16,13 @@ formCadastro.registro.addEventListener('submit', async (event) => {
     const username = formCadastro.REG__username.value;
     const password = formCadastro.REG__password.value;
 
-    try {
-        // Envia a requisição POST com os dados do formulário
-        const response = await axios.post('http://localhost:3000/registro/cadastroUsuario', {
-            username: username,
-            password: password
-        });
-
-        // Exibe a resposta do servidor
-        console.log(response)
-    } catch (error) {
-        // Registra o erro no console e exibe uma mensagem de erro
-        console.error('Erro ao cadastrar:', error);
-        alert('Erro ao cadastrar');
-    }
+    axios.post('http://localhost:3000/registro/cadastroUsuario',{
+        username,
+        password
+    }).then(response =>{
+        console.log(response.data)
+        alert('Funcionou porra')
+    })
+  
 });
 
