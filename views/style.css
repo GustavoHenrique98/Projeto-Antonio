@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#loginForm{
+    border: 1px solid black;
+}
+#loginForm fieldset{
+    display:flex;
+    flex-direction:column;
+    padding:1.5rem;
+    gap: 16px;
+    
+}
+
+#loginForm fieldset{
+    text-align: center;
+    border: none;
+    margin: 1rem 0rem;
+}
+label{
+    text-align: left;
+}
+
+
+
+/*Cadastro*/
+#formRegistro{
+    border: 1px solid black;
+}
+
+#formRegistro fieldset{
+    display:flex;
+    flex-direction:column;
+    padding:1rem;
+    gap: 16px;
+    border:none;
+
+    
+}
+
+#formRegistro legend{
+    text-align: center;
+    border: none;
+    padding-top: 1rem;
+}
