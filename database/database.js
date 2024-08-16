@@ -1,15 +1,12 @@
-import mysql from 'mysql2';
-import mysql__config from './mysqlconfig.js';
-
-const conection = mysql.createConnection(mysql__config);
+import mysqlConfig from "./mysqlconfig.js";
+import mysql from "mysql2";
+const conection = mysql.createConnection(mysqlConfig);
 
 conection.connect(error=>{
-    if(error){
-        console.log(`Erro! :${error.stack}`);
+    if(!error){
+        console.log("Mysql conectado com sucesso!");
     }else{
-        console.log('MySql conectado com sucesso!!');
+        console.log(`ERROR! :${error.stack}`);
     }
 })
-
-
 export default conection;

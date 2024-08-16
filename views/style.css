@@ -1,54 +1,100 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
-    box-sizing:border-box;
-
+    box-sizing: border-box;
 }
+
 body{
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#loginForm{
-    border: 1px solid black;
-}
-#loginForm fieldset{
-    display:flex;
-    flex-direction:column;
-    padding:1.5rem;
-    gap: 16px;
-    
+    justify-content:center;
+    align-items:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#loginForm fieldset{
-    text-align: center;
-    border: none;
-    margin: 1rem 0rem;
+#formLogin{
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 1.5rem;
 }
-label{
-    text-align: left;
+
+#formLogin fieldset{
+    border: none;
+    display: flex;
+    flex-direction:column;
+    gap: 0.8rem;
+}
+
+#formLogin fieldset legend{
+    border: none;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+
+#formLogin fieldset input{
+    padding: 0.3rem 0rem;
+}
+
+#btn__login{
+    padding: 0.3rem 0rem;
+    text-transform: uppercase;
+    background-color: rgb(12, 9, 9);
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+    cursor: pointer;
+}
+#btn__login:hover{
+    padding: 0.3rem 0rem;
+    text-transform: uppercase;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+    border-radius: 7px;
+
 }
 
 
 
 /*Cadastro*/
-#formRegistro{
+#formCadastro{
     border: 1px solid black;
+    padding: 1rem 1rem;
 }
-
-#formRegistro fieldset{
-    display:flex;
-    flex-direction:column;
-    padding:1rem;
-    gap: 16px;
-    border:none;
-
-    
-}
-
-#formRegistro legend{
-    text-align: center;
+#formCadastro fieldset{
+    display: flex;
+    flex-direction: column;
     border: none;
-    padding-top: 1rem;
+    gap: 1rem;
+}
+#formCadastro legend{
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+#formCadastro input{
+    padding: 0.3rem;
+}
+
+
+#btn__cadastro{
+    padding: 0.3rem 0rem;
+    text-transform: uppercase;
+    background-color: rgb(12, 9, 9);
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+    cursor: pointer;
+}
+#btn__cadastro:hover{
+    padding: 0.3rem 0rem;
+    text-transform: uppercase;
+    background-color: rgb(48, 46, 46);
+    color: white;
+    font-weight: bold;
+    transition: 0.8s;
+    border-radius: 7px;
+
 }

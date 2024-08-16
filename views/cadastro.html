@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recicla-Recife | Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.4/axios.min.js"></script>
+</head>
+<body>
+    <form action="#" id="formCadastro" method="post">
+        <fieldset>
+            <legend>Cadastre-se</legend>
+            <label for="REG__username">Username</label>
+            <input type="text" name="REG__username" id="REG__username" placeholder="Digite um nome de usuário" required>
+            
+            <label for="REG__password">Password</label>
+            <input type="password" name="REG__password" id="REG__password" placeholder="Digite uma senha" required>
+            
+            <p>
+                Já tem uma conta? <a href="./login.html">Faça login</a>
+            </p>
+
+            <button id="btn__cadastro">Cadastrar</button>
+        </fieldset>
+    </form>
+
+
+    <script type="module" src="../scripts/cadastro.js"></script>
+</body>
+</html>

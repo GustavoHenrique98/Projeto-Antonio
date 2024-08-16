@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.4/axios.min.js"></script>
+    <title>Recicla-Recife Login</title>
+</head>
+<body>
+    <form action="#" id="formLogin">
+        <fieldset>
+            <legend>Faça login</legend>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário"required>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
+            
+            <div>
+                <span>Não tem uma conta? <a href="./cadastro.html">cadastre-se</a></span>
+            </div>
+            <button type="submit" id="btn__login">Fazer Login</button>
+        </fieldset>
+    </form>
+
+
+    <script type="module" src="../scripts/login.js"></script>
+</body>
+</html>
